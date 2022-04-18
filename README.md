@@ -63,7 +63,7 @@ For example:
     "replit": {
         "name": "johndoe",
         "uid": "1234567",
-        "roles": ["explorer", "Role2"],
+        "roles": ["Role1", "Role2"],
         "teams": ["Team1", "Team2", "Team3"]
     }
 }
