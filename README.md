@@ -2,7 +2,7 @@
     <img 
          src="https://media.discordapp.net/attachments/811964301669695550/965400192704712715/Group_13.png?width=1440&height=362" 
          alt="ReplitAuth logo" 
-         width="70%"
+         width="90%"
     />
     <h1>The best solution for authenticating users with Replit</h1>
 </div>
