@@ -7,6 +7,16 @@
     <h1>The best solution for authenticating users with Replit</h1>
 </div>
 
+## Why?
+As of this commit, this project is the only practical solution for Replit user authentication.
+This is because the official Replit solution only returns public information about an authenticated user. 
+If only this is used to verify a user, 
+it would be trivial to pose as another user by submitting another user's info, as it is public.
+In order to build a practical, robust and secure authentication system, some sort of secret information must be used, that only the original 
+authenticated client and the authentication server know. This is what the `sessionToken` field in the login response body stands to solve. 
+By including this secret information in subsequent communications with the authentication server, each request can essentially be linked 
+to the original authention, verifying that the user is who they say they are.
+
 ## Usage guide
 
 ### Login
@@ -69,11 +79,9 @@ there is no basis on which to trust my word. Although no part of this project co
 it could still be considered a sensitive part in a project or product utilising it. 
 Like any other zero-trust system, there is no hard, absolute basis on which to verify my claims.
 
-As of this commit, this project is the only practical solution for Replit user authentication. 
-
-As a final note, as a note to inform, due to how little information Replit provides through authentication, 
-it is entirely possible for those with database access to access authentication tokens for any currently signed-in user. 
+As a final note, to inform, it is entirely possible for those with database access to access authentication tokens for any currently signed-in user. 
 This could then be used to authenticate requests to the project the authentication was originally used for, posing as the original user.
+If a database does not store its information to a suitably encrypted degree, any database manager can access the information stored within.
 
 As of this commit, I ([Malted](https://github.com/ma1ted)) am the only person with access to this database. Any changes to this will be 
 reflected in this README accordingly. 
