@@ -46,14 +46,15 @@ function login() {
 
 Upon a successful authentication, `msg.data` will contain the following data:
 
-| Name           | Type       | Description                                |
-| :------------- | :--------- | :----------------------------------------- |
-| `success`      | `boolean`  | Whether the authentication was success.    |
-| `sessionToken` | `string`   | The session token.                         |
-| `replit.name`  | `string`   | The username of the user.                  |
-| `replit.uid`   | `integer`  | The unique account identifier of the user. |
-| `replit.roles` | `[string]` | The roles belonging to the user.           |
-| `replit.teams` | `[string]` | The teams the user is in.                  |
+| Name            | Type       | Description                                  |
+| :-------------- | :--------- | :------------------------------------------- |
+| `success`       | `boolean`  | Whether the authentication was success       |
+| `sessionToken`  | `string`   | The session token                            |
+| `replit.name`   | `string`   | The username of the user                     |
+| `replit.avatar` | `string`   | A URL pointing to the user's profile picture |
+| `replit.uid`    | `integer`  | The unique account identifier of the user    |
+| `replit.roles`  | `[string]` | The roles belonging to the user              |
+| `replit.teams`  | `[string]` | The teams the user is in                     |
 
 For example:
 ```json
@@ -62,6 +63,7 @@ For example:
     "sessionToken": "3f9108e6-62e1-49c7-8ce4-d691903fafe",
     "replit": {
         "name": "johndoe",
+        "avatar": "https://storage.googleapis.com/replit/images/0123456789_0123456789abcdef.png"
         "uid": "1234567",
         "roles": ["Role1", "Role2"],
         "teams": ["Team1", "Team2", "Team3"]
