@@ -10,16 +10,11 @@
 ## Usage guide
 
 ### Login
-Initially, a user is directed to 
+Initially, direct the user to 
 [`https://login.replitauth.com`](https://login.replitauth.com), 
 where they will be prompted to log into their Replit account.
 
-This is a redirect to 
-`https://replit.com/auth_with_repl_site?domain=replit.ma1ted.workers.dev`, 
-with the redirection handled by a Cloudflare Worker, the source for which can be found 
-[here](https://github.com/ma1ted/replitauth/tree/main/login-redirect)
-
-After a user logs in to their Replit account, a message is sent 
+After the user logs in to their Replit account, a message is sent 
 to the window that opened the login window.
 The message contains data about the user that was just authenticated.
 
@@ -84,7 +79,7 @@ As of this commit, I ([Malted](https://github.com/ma1ted)) am the only person wi
 reflected in this README accordingly. 
 
 While it goes without saying I will, under no circumstances, access
-data within this database without going through the same channels as every other user of this project, this claim can't be absolutely trusted.
+data within this database without going through the same channels as every other user of this project, this claim can not be absolutely trusted.
 
 If you're bothered by my ability to access information, please feel free to self-host this project.
 
