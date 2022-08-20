@@ -73,6 +73,9 @@ For example:
 
 <!-- TODO: Add user validation section -->
 
+
+<!--
+
 ---
 
 ## Something to think about
@@ -98,4 +101,4 @@ If you're bothered by my ability to access information, please feel free to self
 or any of its subsidiaries or its affiliates. The official Replit website can be found at [https://replit.com](https://replit.com).
 
 The name Replit as well as related names, marks, emblems and images are registered trademarks of their respective owners.
-
+-->
